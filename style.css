@@ -1,0 +1,102 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 18px;
+  background: radial-gradient(circle at top, #263d66, transparent 60%),
+              linear-gradient(145deg, #071329, #152440, #080f20);
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+.card {
+  width: 100%;
+  max-width: 430px;
+  min-height: 550px;
+  padding: 32px 22px;
+  border: 1px solid #c8a65e;
+  border-radius: 28px;
+  background: #ffffff09;
+  box-shadow: 0 0 40px #0007;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 23px;
+}
+
+.top {
+  color: #e8cc91;
+  font-size: 11px;
+  letter-spacing: 4px;
+}
+
+.heart {
+  font-size: 55px;
+  animation: beat 1.5s infinite;
+}
+
+h1 {
+  font-family: 'Cormorant Garamond', serif;
+  color: #f2d49b;
+  font-size: 42px;
+}
+
+#question {
+  font-size: 15px;
+  line-height: 1.9;
+  color: #eee8dc;
+  white-space: pre-line;
+}
+
+.answers {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 13px;
+}
+
+button {
+  width: 100%;
+  min-height: 50px;
+  padding: 13px 15px;
+  border-radius: 35px;
+  border: 1px solid #e4c47e;
+  background: linear-gradient(120deg, #f2d9a1, #bd934d);
+  color: #111b30;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(.95);
+}
+
+#progress, #reaction {
+  font-size: 13px;
+  color: #e8cc91;
+  line-height: 1.8;
+}
+
+.footer {
+  font-size: 11px;
+  color: #aeb9ce;
+}
+
+@keyframes beat {
+  50% { transform: scale(1.2); }
+}
